@@ -10,20 +10,18 @@ def sucesso(request):
 
 =======
 from django.shortcuts import render,redirect
-from .models import Contratacao
 from formularioContratacao.forms import ContratacaoForm
 
 def index(request):
     data = {}
-    data ['form'] = ContratacaoForm()
-    return render(request,'index.html')
+    data ['index'] = ContratacaoForm()
+    return render(request,'index.html', data)
 
 def create(request):
     form = ContratacaoForm(request.POST or None)
-    print('entrando create')
     if form.is_valid():
         form.save()
-        return redirect('sucesso')
+        return redirect('index')
 
 def sucesso(request):
     return render(request,'sucesso.html')
