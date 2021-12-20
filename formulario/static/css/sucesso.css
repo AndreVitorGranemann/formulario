@@ -1,5 +1,9 @@
 body{
+<<<<<<< HEAD
     background: rgb(240, 235, 248);
+=======
+    background: #ccc;
+>>>>>>> 62b0197 (alteracao)
 }
 main{
     text-align: center;
@@ -11,6 +15,10 @@ main{
     padding: 3%;
     margin: auto;
     text-transform: uppercase;
+<<<<<<< HEAD
+=======
+    border-style:solid;
+>>>>>>> 62b0197 (alteracao)
     
 }
 .botao{
@@ -21,4 +29,8 @@ main{
     padding: 3%;
     margin: auto;
     text-transform: uppercase;
+<<<<<<< HEAD
+=======
+    border-style:solid;
+>>>>>>> 62b0197 (alteracao)
 }

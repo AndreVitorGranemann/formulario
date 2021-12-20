@@ -14,6 +14,7 @@
 </header><br>
 <body>
   
+<<<<<<< HEAD
   
     <div class="mb-3" >
         <label for="nomecompleto" class="form-label">Qual seu nome completo?</label><br>
@@ -95,5 +96,103 @@
         <a class="btn btn-outline-danger" href="">Limpar formulario</a>
       </div><br>
     
+=======
+  <form action="{% url 'create' %}" method="post" >
+    {% csrf_token %}
+    <div class="col-12 m-auto">
+      <div class="mb-3" >
+          <label for="nomecompleto" class="form-label">Qual seu nome completo?</label><br>
+          <input type="text" class="form-control-lg" id="nomecompleto"  placeholder="Digite seu Nome" {{form.nomecompleto}}>
+        </div><br>
+
+        <div class="mb-3">
+          
+          <label for="datanascimento" class="form-label">Qual sua data de nascimento</label><br>
+          <input type="date" class="form-control-lg" name="data" id="data" {{form.dataNascimento}}>
+        </div><br>
+
+        <div class="mb-3">
+          
+          <label for="rg_cpf" class="form-label">Qual seu RG e seu CPF</label><br>
+          <input type="text" class="form-control-lg" id="rg_cpf"  placeholder="digite seu rg" {{form.rg_cpf}}><br>
+          <input type="text" class="form-control-lg" id="rg_cpf" placeholder="digite seu cpf" {{form.rg_cpf}}>
+        </div><br>
+
+        <div class="mb-3">
+          
+          <label for="contaNubank" class="form-label">Qual número da sua conta Nubank</label><br>
+          <input type="text" class="form-control-lg" id="contaNubank"   placeholder="digite sua conta" {{form.contaNubank}}>
+        </div><br>
+        <main>
+          <div class="mb">
+            <label for="estadoCivil" class="form-label">Qual seu estado civil</label><br/>
+          </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="estadoCivil" id="estadoCivil" check_circle>
+          <label class="form-check-label" for="Solteiro">
+            Solteiro
+          </label>
+        </div>
+
+        <div class="form-check">
+          
+          <input class="form-check-input" type="radio" name="estadoCivil" id="estadoCivil"  check_circle>
+          <label class="form-check-label" for="Casado">
+            Casado
+          </label>
+        </div>
+
+        <div class="form-check">
+          
+          <input class="form-check-input" type="radio" name="estadoCivil" id="estadoCivil"   check_circle>
+          <label class="form-check-label" for="Separado">
+            Separado
+          </label>
+        </div>
+
+        <div class="form-check">
+          
+          <input class="form-check-input" type="radio" name="Divorciado" id="Divorciado"  check_circle>
+          <label class="form-check-label" for="Divorciado">
+            Divorciado
+          </label>
+        </div>
+
+        <div class="form-check">
+          
+          <input class="form-check-input" type="radio" name="estadoCivil" id="estadoCivil"  check_circle>
+          <label class="form-check-label" for="Viuvo">
+            Viuvo
+          </label>
+        </div><br>
+      </main><br>
+        <div class="mb-3">
+          
+          <label for="numeroCarteiraTrabalho" class="form-label">Qual numero da sua carteira de trabalho</label><br>
+          <input type="text" class="form-control-lg" id="numeroCarteiraTrabalho" placeholder=" numero da sua carteira"{{form.numeroCarteiraTrabalho}} >
+        </div>
+
+        <div class="mb-3">
+          
+          <label for="whatsappEmail" class="form-label">Qual seu whatsap e e-mail de contato?</label><br>
+          <input type="text" class="form-control-lg" id="whatsappEmail"  placeholder="digite seu whatsapp" {{form.whatsappEmail}}><br>
+          <input type="text" class="form-control-lg" id="whatsappEmail"  placeholder="digite seu e-mail" {{form.whatsappEmail}} >
+        </div>
+
+        <div class="mb-3">
+          
+          <label for="linkdlen" class="form-label">Qual seu github e linkedin</label> <br>
+          <input type="text" class="form-control-lg" id="linkdlen"  placeholder="digite seu github"{{form.linkdlen}}><br>
+          <input type="text" class="form-control-lg" id="linkdlen"  placeholder="digite seu linkdlen" {{form.linkdlen}}>
+        </div>
+        
+        <div class="botao">
+          <input type="submit" class="btn btn-success" value="Salvar">
+          <a class="btn btn-outline-danger" href="">Limpar formulario</a>
+        </div><br>
+    </div>
+    </form>
+>>>>>>> 62b0197 (alteracao)
 </body>
 </html>
