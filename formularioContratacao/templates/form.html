@@ -14,94 +14,7 @@
 </header><br>
 <body>
   
-<<<<<<< HEAD
-<<<<<<< HEAD
-  
-    <div class="mb-3" >
-        <label for="nomecompleto" class="form-label">Qual seu nome completo?</label><br>
-        <input type="text" class="form-control-lg" id="nomecompleto" placeholder="Sua Resposta">
-      </div><br>
-
-      <div class="mb-3">
-        <label for="datanascimento" class="form-label">Qual sua data de nascimento</label><br>
-        
-        <input type="date" class="form-control-lg" name="data" id="data">
-      </div><br>
-
-      <div class="mb-3">
-        <label for="rg_cpf" class="form-label">Qual seu RG e seu CPF</label><br>
-        <input type="text" class="form-control-lg" id="rg_cpf" placeholder="Sua resposta">
-      </div><br>
-
-      <div class="mb-3">
-        <label for="contaNubank" class="form-label">Qual número da sua conta Nubank</label><br>
-        <input type="text" class="form-control-lg" id="contaNubank" placeholder="Sua resposta">
-      </div><br>
-      <main>
-        <div class="mb-3">
-          <label for="estadoCivil" class="form-label">Qual seu estado civil</label><br/>
-        </div>
-      <div class="form-check">
-        
-        <input class="form-check-input" type="radio" name="Solteiro" id="Solteiro" check_circle>
-        <label class="form-check-label" for="Solteiro">
-          Solteiro
-        </label>
-      </div>
-
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="Casado" id="Casado" >
-        <label class="form-check-label" for="Casado">
-          Casado
-        </label>
-      </div>
-
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="Separado" id="Separado" >
-        <label class="form-check-label" for="Separado">
-          Separado
-        </label>
-      </div>
-
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="Divorciado" id="Divorciado" >
-        <label class="form-check-label" for="Divorciado">
-          Divorciado
-        </label>
-      </div>
-
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="Viuvo" id="Viuvo" >
-        <label class="form-check-label" for="Viuvo">
-          Viuvo
-        </label>
-      </div><br>
-    </main><br>
-      <div class="mb-3">
-        <label for="numeroCarteiraTrabalho" class="form-label">Qual numero da sua carteira de trabalho</label><br>
-        <input type="text" class="form-control-lg" id="numeroCarteiraTrabalho" placeholder="Sua resposta">
-      </div>
-
-      <div class="mb-3">
-        <label for="whatsappEmail" class="form-label">Qual seu whatsap e e-mail de contato?</label><br>
-        <input type="text" class="form-control-lg" id="whatsappEmail" placeholder="Sua resposta">
-      </div>
-
-      <div class="mb-3">
-        <label for="linkdlen" class="form-label">Qual seu github e linkedin</label> <br>
-        <input type="text" class="form-control-lg" id="linkdlen" placeholder="Sua resposta">
-      </div>
-      
-      <div class="botao">
-        <a class="btn btn-outline-success" href="/sucesso">Enviar</a>
-        <a class="btn btn-outline-danger" href="">Limpar formulario</a>
-      </div><br>
-    
-=======
-  <form action="{% url 'create' %}" method="post" >
-=======
   <form name="form" id="form" action="{% url 'create' %}" method="post" >
->>>>>>> f52265e (codigo form)
     {% csrf_token %}
     
       <div class="mb-3" >
@@ -197,6 +110,5 @@
         </div><br>
     
     </form>
->>>>>>> 62b0197 (alteracao)
 </body>
 </html>
