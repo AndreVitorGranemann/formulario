@@ -14,16 +14,13 @@ from .models import Contratacao
 from formularioContratacao.forms import ContratacaoForm
 
 def index(request):
-    return render(request,'index.html')
-
-def form(request):
     data = {}
     data ['form'] = ContratacaoForm()
-    return render (request, 'form.html', data)
+    return render(request,'index.html')
 
 def create(request):
     form = ContratacaoForm(request.POST or None)
-    print(form)
+    print('entrando create')
     if form.is_valid():
         form.save()
         return redirect('sucesso')
