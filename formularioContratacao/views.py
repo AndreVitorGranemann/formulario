@@ -12,8 +12,10 @@ def form(request):
     
 def create(request):
     form = ContratacaoForm(request.POST or None)
-    form.save()
-    return redirect('index')
+    #import ipdb; ipdb.set_trace()
+    if form.is_valid():
+        form.save()
+        return redirect('index')
 
 
 

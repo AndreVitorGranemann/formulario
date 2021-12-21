@@ -14,18 +14,18 @@
 </header><br>
 <body>
   
-  <form name="form" id="form" action="/create/" method="post" >
+  <form name="form" id="form" action="{% '/create/' %}" method="post" >
     {% csrf_token %}
     
       <div class="mb-3" >
           <label for="nomecompleto" class="form-label">Qual seu nome completo?</label><br>
-          <input type="text" class="form-control-lg" id="nomecompleto"  placeholder="Digite seu Nome" {{form.nomecompleto}}>
+          <input type="text" class="form-control-lg" id="nomecompleto"  placeholder="Digite seu Nome" {{form.nomecompleto}} >
         </div><br>
 
         <div class="mb-3">
           
-          <label for="datanascimento" class="form-label">Qual sua data de nascimento</label><br>
-          <input type="date" class="form-control-lg" name="data" id="data" {{form.dataNascimento}}>
+          <label for="dataNascimento" class="form-label">Qual sua data de nascimento</label><br>
+          <input type="date" class="form-control-lg" name="data" id="data" {{form.dataNascimento}} >
         </div><br>
 
         <div class="mb-3">
@@ -62,7 +62,7 @@
 
         <div class="form-check">
           
-          <input class="form-check-input" type="radio" name="estadoCivil" id="estadoCivil"   check_circle>
+          <input class="form-check-input" type="checkbox" name="estadoCivil" id="estadoCivil" value="Separado"  check_circle>
           <label class="form-check-label" for="Separado">
             Separado
           </label>
