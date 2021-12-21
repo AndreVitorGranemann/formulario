@@ -1,4 +1,3 @@
-
 from django.shortcuts import render,redirect
 from formularioContratacao.forms import ContratacaoForm
 
@@ -16,6 +15,7 @@ def create(request):
     if form.is_valid():
         form.save()
         return redirect('index')
+
 
 
 
