@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/index.css">
+    <title>Formulário Contratação Dev</title>
+</head>
+
+<header class="container-fluid">
+  <h1>Formulário Contratação DEV</h1>
+</header><br>
+<body>
+  
+  <form name="form" id="form" action="/create/" method="post" >
+    {% csrf_token %}
+    
+      <div class="mb-3" >
+          <label for="nomecompleto" class="form-label">Qual seu nome completo?</label><br>
+          <input type="text" class="form-control-lg" id="nomecompleto"  placeholder="Digite seu Nome" {{form.nomecompleto}}>
+        </div><br>
+
+        <div class="mb-3">
+          
+          <label for="datanascimento" class="form-label">Qual sua data de nascimento</label><br>
+          <input type="date" class="form-control-lg" name="data" id="data" {{form.dataNascimento}}>
+        </div><br>
+
+        <div class="mb-3">
+          
+          <label for="rg_cpf" class="form-label">Qual seu RG e seu CPF</label><br>
+          <input type="text" class="form-control-lg" id="rg_cpf"  placeholder="digite seu rg" {{form.rg_cpf}}><br>
+          
+        </div><br>
+
+        <div class="mb-3">
+          
+          <label for="contaNubank" class="form-label">Qual número da sua conta Nubank</label><br>
+          <input type="text" class="form-control-lg" id="contaNubank"   placeholder="digite sua conta" {{form.contaNubank}}>
+        </div><br>
+        <main>
+          <div class="mb">
+            <label for="estadoCivil" class="form-label">Qual seu estado civil</label><br/>
+          </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="estadoCivil" id="estadoCivil" check_circle>
+          <label class="form-check-label" for="Solteiro">
+            Solteiro
+          </label>
+        </div>
+
+        <div class="form-check">
+          
+          <input class="form-check-input" type="radio" name="estadoCivil" id="estadoCivil"  check_circle>
+          <label class="form-check-label" for="Casado">
+            Casado
+          </label>
+        </div>
+
+        <div class="form-check">
+          
+          <input class="form-check-input" type="radio" name="estadoCivil" id="estadoCivil"   check_circle>
+          <label class="form-check-label" for="Separado">
+            Separado
+          </label>
+        </div>
+
+        <div class="form-check">
+          
+          <input class="form-check-input" type="radio" name="Divorciado" id="Divorciado"  check_circle>
+          <label class="form-check-label" for="Divorciado">
+            Divorciado
+          </label>
+        </div>
+
+        <div class="form-check">
+          
+          <input class="form-check-input" type="radio" name="estadoCivil" id="estadoCivil"  check_circle>
+          <label class="form-check-label" for="Viuvo">
+            Viuvo
+          </label>
+        </div><br>
+      </main><br>
+        <div class="mb-3">
+          
+          <label for="numeroCarteiraTrabalho" class="form-label">Qual numero da sua carteira de trabalho</label><br>
+          <input type="text" class="form-control-lg" id="numeroCarteiraTrabalho" placeholder=" numero da sua carteira"{{form.numeroCarteiraTrabalho}} >
+        </div>
+
+        <div class="mb-3">
+          
+          <label for="whatsappEmail" class="form-label">Qual seu whatsap e e-mail de contato?</label><br>
+          <input type="text" class="form-control-lg" id="whatsappEmail"  placeholder="digite seu whatsapp" {{form.whatsappEmail}}><br>
+        
+        </div>
+
+        <div class="mb-3">
+          
+          <label for="linkdlen" class="form-label">Qual seu github e linkedin</label> <br>
+          <input type="text" class="form-control-lg" id="linkdlen"  placeholder="digite seu linkdlen" {{form.linkdlen}}>
+        </div>
+        
+        <div class="botao">
+          <input type="submit" class="btn btn-success" value="Salvar">
+          <a class="btn btn-outline-danger" href="">Limpar formulario</a>
+        </div><br>
+    
+    </form>
+</body>
+</html>
