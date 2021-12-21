@@ -8,6 +8,7 @@ authors = ["andre <andregranemann@hotmail.com>"]
 python = "^3.10"
 Flask = "^2.0.2"
 Django = "^4.0"
+psycopg2 = "^2.9.2"
 
 [tool.poetry.dev-dependencies]
 
