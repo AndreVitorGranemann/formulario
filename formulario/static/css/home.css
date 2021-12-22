@@ -1,3 +1,18 @@
 body{
+    background:slategrey;
+}
+header{
+    padding: 20px 0;
+    text-align: center;
     background: #ccc;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 5%;
+    width: 50%;
+    border-radius: 15px;
+    border-style: solid;
+}
+.tabela{
+    max-width: 1080px;
+    padding: 5%;
 }

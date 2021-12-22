@@ -1,0 +1,24 @@
+body{
+    background:slategrey;
+}
+header{
+    padding: 20px 0;
+    text-align: center;
+    background: #ccc;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 8%;
+    width: 30%;
+    border-radius: 15px;
+    border-style: solid;
+}
+.anf{
+    background: #ccc;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 8%;
+    width: 50%;
+    border-radius: 15px;
+    border-style:solid;
+}
+
